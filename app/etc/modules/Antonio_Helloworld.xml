@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Antonio_Helloworld>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Antonio_Helloworld>
+	</modules>
+</config>

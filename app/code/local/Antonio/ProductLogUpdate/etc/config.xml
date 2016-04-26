@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Antonio_ProductLogUpdate>
+			<version>0.0.1</version>
+		</Antonio_ProductLogUpdate>
+	</modules>
+	
+	<global>
+		<models>
+			<antonio_productlogupdate>
+				<class>Antonio_ProductLogUpdate_Model</class>
+			</antonio_productlogupdate>
+		</models>
+		<events>
+			<catalog_product_save_after>
+				<observers>
+					<antonio_productlogupdate>
+						<class>antonio_productlogupdate/observer</class>
+						<method>logUpdate</method>
+						<type>singleton</type>
+					</antonio_productlogupdate>
+				</observers>
+			</catalog_product_save_after>
+		</events>
+	</global>
+</config>

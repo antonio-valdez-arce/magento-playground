@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Antonio_Helloworld>
+			<version>0.1.0</version>
+		</Antonio_Helloworld>
+	</modules>
+	<frontend>
+		<routers>
+			<helloworld>
+				<use>standard</use>
+				<args>
+					<module>Antonio_Helloworld</module>
+					<frontName>helloworld</frontName>
+				</args>
+			</helloworld>
+		</routers>
+	</frontend>
+</config>
